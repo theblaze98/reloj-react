@@ -40,8 +40,8 @@ function Reloj() {
 
   function reloj() {
     const date = new Date();
-    setDia(dias[date.getDate()]);
-    setDay(date.getDay());
+    setDia(dias[date.getDay()]);
+    setDay(date.getDate());
     setMes(meses[date.getMonth()]);
     setHora(date.getHours());
     setMinutos(date.getMinutes());
