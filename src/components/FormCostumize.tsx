@@ -15,6 +15,7 @@ export default function FormCostumize({ toggleModal }: props) {
 		event: React.ChangeEvent<HTMLInputElement>
 	) => {
 		handleFileUpload(event, changeBackground)
+		console.log(file)
 	}
 	const handleAudioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		handleFileUpload(event, changeAudio)
@@ -32,7 +33,7 @@ export default function FormCostumize({ toggleModal }: props) {
 
 	return (
 		<div className='absolute w-11/12 max-w-md bg-slate-800 rounded-md border-2 border-slate-700 flex flex-col p-5 gap-5 text-white'>
-			<label htmlFor="bg-url">Wallpaper URL</label>
+			<label htmlFor='bg-url'>Wallpaper URL</label>
 			<input
 				type='text'
 				name='bg-url'
